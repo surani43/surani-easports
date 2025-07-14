@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Surani Esports Registration</title>
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #1e1e1e;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px #8000ff;
+    }
+    img {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      color: #c77dff;
+    }
+    .hidden {
+      display: none;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 10px;
+    }
+    button {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      background-color: #8a2be2;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #7b1fa2;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="https://i.postimg.cc/W1X7ThzY/file-00000000bf6c61f6970308844d37afec.png" alt="Surani Playz Logo" />
+    <h1>Welcome to Surani Esports</h1>
+    <p>Before registering, please subscribe to our YouTube channel:</p>
+    <a href="https://www.youtube.com/@SuraniPlayz" target="_blank">
+      <button>🔔 Subscribe to Surani Playz</button>
+    </a>
+    <br><br>
+    <button onclick="showForm()">✅ I Have Subscribed</button>
+
+    <div id="registrationForm" class="hidden">
+      <h2>🎮 Registration Form</h2>
+      <form action="https://formsubmit.co/hadeedsubhan@gmail.com" method="POST">
+        <!-- Hides FormSubmit's confirmation -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <input type="text" name="Free Fire ID Name" placeholder="Free Fire ID Name" required />
+        <input type="text" name="Free Fire UID" placeholder="Free Fire UID" required />
+        <input type="text" name="Squad Name" placeholder="Squad Name" required />
+        <textarea name="Squad UIDs" placeholder="List Squad UIDs one by one" required></textarea>
+        <input type="number" name="Age" placeholder="Your Age" required />
+        <input type="text" name="Real Name" placeholder="Your Real Name" required />
+        <input type="text" name="WhatsApp Number" placeholder="WhatsApp Number" required />
+        <input type="email" name="Gmail" placeholder="Gmail for contact" required />
+        <input type="text" name="YouTube Channel Name" placeholder="YouTube Channel Name" />
+        <input type="text" name="TikTok or Instagram ID" placeholder="TikTok or Instagram ID (optional)" />
+        <select name="Policy Agreement" required>
+          <option value="">Do you agree to the policy (no misbehave)?</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+        <button type="submit">🚀 Submit Registration</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function showForm() {
+      document.getElementById("registrationForm").classList.remove("hidden");
+    }
+  </script>
+
+</body>
+</html>
